@@ -1,0 +1,219 @@
+
+.logo-brand{
+    width: 70px;
+            height: 70px;
+            border-radius: 50px;
+            border: 1px dashed;
+            padding: 2px;
+}
+
+
+.scrol-nav{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+.scrol-nav > li{
+    padding: 5px;
+}
+.scrol-nav > li > .cat-item{
+    background-color: bisque;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+.product-list{
+    padding-top: 10px;
+}
+.product-wrap{
+    display:flex;
+    grid-template-columns: auto auto auto;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.grid-product{
+    width: 100px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid #dad2d2;
+    border-radius: 5px;
+    /* margin: 10px; */
+}
+.grid-product > img{
+    width: 90%;
+    border-radius: 5px;
+    height: 80px;
+}
+.grid-product > .btn-order{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    outline: none;
+    flex-direction: row;
+}
+
+.grid-product > .btn-order > button{
+    border: 0;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(72, 227, 232);
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.grid-product > .btn-order span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 11px;
+    font-weight: 600;
+    width: 20px;
+    border-radius: 50px;
+    height: 20px;
+    color: aliceblue;
+    background-color: #f1ac02;
+}
+.footer-submit{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(7, 63, 174);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 40px;
+    color: aliceblue;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* invoice page  */
+.invoice-page{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    overflow: h;
+    bottom: 0;
+    z-index: 20;
+    display: none;
+    transition: 1s;
+}
+.invoice-page > .invoice-header{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    z-index: 5;
+    position: sticky;
+    background-color: white;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+
+}
+.invoice-page > .invoice-header > .btn-back{
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(73, 3, 214);
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+    color: aliceblue;
+    left: 5px;
+}
+.invoice-page > .invoice-header > h1{
+    font-weight: bold;
+}
+
+/* invoice body  */
+.invoice-page >  .cus-profile{
+    width: 100%;
+    border-bottom: 2px dashed #10b3ad;
+    padding: 5px;
+    display: flex;
+    padding-top: 50px;
+    position: relative;
+}
+
+.invoice-page >  .cus-profile > .pro-avatar{
+    width: 70px;
+    height: 70px;
+    border: 2px dashed #10b3ad;
+    /* background-color: aquamarine; */
+    border-radius: 50px;
+    padding: 2px;
+    justify-content: center;
+}
+.invoice-page >  .cus-profile > .pro-avatar > img{
+    width: 100%;
+    border-radius: 50px;
+    height: 100%    ;
+    object-fit: cover;
+}
+.invoice-page >  .cus-profile > .pro-more{
+ padding: 5px;
+}
+.invoice-page > .cus-profile > .pro-more >p{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: blue;
+    padding: 5px;
+}
+
+
+/* invoice list order  */
+.invoice-page > .invoice-body {
+    padding-bottom: 50px;
+}
+.invoice-page > .invoice-body > .list-order{
+    padding: 5px;
+}
+
+.invoice-page > .btn-action{
+    display: block;
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.invoice-page > .btn-action > button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(7, 63, 174);
+    text-align: center;
+    bottom: 0;
+    border: none;
+    margin: 5px;
+    left: 0;
+    line-height: 40px;
+    color: aliceblue;
+    right: 0;
+}
+
+
+/* category active  */
+.cat-active{
+    background-color: cyan;
+}

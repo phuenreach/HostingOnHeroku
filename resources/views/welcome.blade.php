@@ -25,28 +25,28 @@
         <li>
             <a class="nav-item nav-link cat-item cat-active category-filter" href="#" data-id="0">ទាំងអស់</a>
         </li>
-        @foreach ($category as $item)
+        {{-- @foreach ($category as $item)
         <li>
             <a class="nav-item nav-link cat-item category-filter " href="#" data-id="{{ $item->id }}">{{ $item->title }}</a>
         </li>
-        @endforeach
+        @endforeach --}}
 
 
     </ul>
     <div class="col-12 product-list ">
       <div class="row product-wrap">
-        @foreach ($products as $item )
+        {{-- @foreach ($products as $item )
         <div class="grid-product">
-          <img src="{{ $item->image ? asset("uploads/product/".$item->image ) : asset("image/no_pro.png")}}" >
+          {{-- <img src="{{ $item->image ? asset("uploads/product/".$item->image ) : asset("image/no_pro.png")}}" > --}}
 
-          <div style="height: 50px; text-overflow: ellipsis;" >{{ $item->name }}</div>
+          {{-- <div style="height: 50px; text-overflow: ellipsis;" >{{ $item->name }}</div>
           <div class="btn-order">
             <span class="value-order" style="top:-5px;right:-5px" data-id="{{ $item->id }}" data-toggle="{{ $item->name }}" data-show="{{ $item->unit_price }}">0</span>
             <button class="btn-descrease bg-warning" style="outline: none; color:azure"><i class="fa fa-minus"></i></button>
             <button class="btn-increase bg-info" style="outline: none;  color:azure" ><i class="fa fa-plus"></i></button>
           </div>
         </div>
-        @endforeach
+        @endforeach --}} --}}
 
       </div>
     </div>
